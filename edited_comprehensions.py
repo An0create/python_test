@@ -25,7 +25,7 @@ def generate_usernames(mod_list):
     raise NotImplementedError()
 
 def map_id_to_initial(employee_list):
-    id_to_initial = {employee["id"]: employee["name"][0] for employee in employee_list}
+    id_to_initial = {employee["name"][0]: employee["id"] for employee in employee_list}
     return id_to_initial
 
     raise NotImplementedError()
