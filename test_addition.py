@@ -1,5 +1,5 @@
-import addition
 import pytest
+import addition
 
 def test_add():
     assert addition.add(4,5) == 9
