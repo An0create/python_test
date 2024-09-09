@@ -6,7 +6,7 @@ class Recipe():
     
     def contents(self):
           print("The " + self.dish + " has " + str(self.items) + \
-                " and takes " + str(self.time) + "min to prepare")
+                " and takes " + str(self.time) + " min to prepare")
           
 pizza = Recipe("Pizza", ["cheese", "pepperoni", "sauce", "dough"], 45)
 pasta = Recipe("Pasta", ["farfelle", "sauce", "meat"], 60)

@@ -12,6 +12,7 @@ def read_file_into_list(file_name):
 def write_first_line_to_file(file_contents, output_filename):
     with open(output_filename, 'w') as f:
         f.write(file_contents.split('\n')[0])
+        
 
 def read_even_numbered_lines(file_name):
     with open(file_name, 'r') as f:

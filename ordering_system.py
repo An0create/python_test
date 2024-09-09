@@ -34,7 +34,7 @@ def summarize_order(order):
 
     raise NotImplementedError()
 
-# This function is provided for you, and will print out the items in an order
+
 def print_order(order):
     print('Your order includes: ' + str(len(order)) + ' items')
     items = []
@@ -42,14 +42,14 @@ def print_order(order):
     print(items)
     return order
 
-# This function is provided for you, and will display the menu
+
 def display_menu():
     print("------- Menu -------")
     for selection in menu:
         print(f"{selection}. {menu[selection]['name'] : <9} | {menu[selection]['price'] : >5}")
     print()
 
-# This function is provided for you, and will create an order by prompting the user to select menu items
+
 def take_order():
     display_menu()
     order = []
@@ -60,10 +60,7 @@ def take_order():
         order.append(menu[int(item)])
     return order
 
-'''
-Here are some sample function calls to help you test your implementations.
-Feel free to change, uncomment, and add these as you wish.
-'''
+
 def main():
     order = take_order()
     print_order(order)
